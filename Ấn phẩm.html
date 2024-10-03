@@ -1,0 +1,302 @@
+<!-- an pham -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ấn Phẩm</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+<style>
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  width: 100%;
+  font-family: var(--mdc-typography-body1-font-family,var(--mdc-typography-font-family,sans-serif));
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+li {
+  float: left;
+}
+
+li a, .nhi {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: #666666;
+  font-size: 25px;
+
+}
+
+li a:hover, .nhat:hover .nhi {
+  color: #9B703D;
+  border-bottom: 2px solid #C29D68;
+  border-color: #9B703D;
+}
+
+li.nhat {
+  display: inline-block;
+}
+
+.ba {
+  display: none;
+  position: absolute;
+  background-color: #ECECEC;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.ba a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.ba a:hover {
+	color: #C29D68;
+
+}
+
+.nhat:hover .ba {
+  display: block;
+}
+	.nhi {
+		color: #9B703D;
+	}
+	a{
+		text-decoration: none;
+	}
+  .content{
+    background-image: url('https://thietkewebn03.000webhostapp.com/d83.jpg');
+    width: 100%;
+    height: 100%;
+      opacity: 0.9;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .column {
+      float: left;
+      width: 50%;
+    }
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+      width: 100%;
+    }
+    @media screen and (max-width: 1000px)  {
+      .column {
+        width: 100%;
+      }
+    }
+    button{
+      border: none;
+       box-shadow: 0 5px 8px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+       border-radius: 20PX;
+    }
+    .con {
+      float: left;
+      width: 33.33%;
+    }
+    .me:after {
+      content: "";
+      display: table;
+      clear: both;
+      width: 100%;
+    }
+    @media screen and (max-width: 1000px) {
+      .con {
+        width: 100%;
+      }
+    }
+    button a{
+      color: #EDEDED ;
+     
+    }
+    button a:hover{
+      color: #8B5D5D;
+      background-color: #E3B7A0;
+      border-radius: 20px;
+      box-shadow: 0 6px 9px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    .first{
+      display: none;
+      position: absolute;
+      z-index: 1;
+    }
+    .first a{
+      padding: 10px 30px;
+      text-decoration: none;
+      display: block;
+      background-color: #8B5D5D;
+      border-radius: 20px;
+    }
+    .column:hover .first{
+      display: block;
+    }
+    .con:hover .first{
+      display: block;
+    }
+</style>
+</head>
+<body>
+
+<ul>
+  <li class="gt"><a href="#" style="">Giới thiệu</a></li>
+  <li class="nhat">
+    <a href="#" class="nhi">Assignment</a>
+    <div class="ba">
+      <a href="#">Sản phẩm đồ họa</a>
+      <a href="#">Thiết kế Web</a>
+      <a href="#">Lập trình ngôn ngữ C</a>
+    </div>
+  </li>
+  <li class="home" style="color: #9B703D;"><a href="#news">Home</a></li>
+  <li><a href="#" title="Nhấn để xem">My CV</a></li>
+  <li><a href="#">Liên hệ </a></li>
+  <li style="float: right; margin-right: 50px;"><img src="https://thietkewebn03.000webhostapp.com/Screenshot_39.png"  width="60px" height="50PX"></li>
+</ul>
+<div class="content" style=" padding: 0 0 100px 0 ">
+  <div style="padding: 40px 430px;">
+    <div style="padding: 20px; font-size: 50px; border-bottom: 3px solid black; color: #8B5D5D; text-align: center;">THIẾT KẾ WEB</div>
+  </div>
+  <div class="row" >
+      <div class="column">
+        <button style="background-color: #8B5D5D;margin-left: 350px;">
+          <a href="https://thietkewebn03.000webhostapp.com/bt2.2.html" style="padding: 0 40px; font-size:30px;">Buổi 1</a>
+          <div class="first">
+            <a href="https://thietkewebn03.000webhostapp.com/bt2.1.html?classId=2a78741a-2640-4787-bc3b-8ba740deb13f&assignmentId=9ae28efc-18e5-4870-aee6-472e475de330&submissionId=12ac9e1c-c52a-3ce9-24e6-4c17c65a5abf">Bài 1</a>
+            <a href="https://thietkewebn03.000webhostapp.com/bt2.2.html?classId=2a78741a-2640-4787-bc3b-8ba740deb13f&assignmentId=9ae28efc-18e5-4870-aee6-472e475de330&submissionId=12ac9e1c-c52a-3ce9-24e6-4c17c65a5abf">Bài 2</a>
+            <a href="https://thietkewebn03.000webhostapp.com/bt2.3.html?classId=2a78741a-2640-4787-bc3b-8ba740deb13f&assignmentId=9ae28efc-18e5-4870-aee6-472e475de330&submissionId=12ac9e1c-c52a-3ce9-24e6-4c17c65a5abf">Bài 3</a>
+            <a href="https://thietkewebn03.000webhostapp.com/bt2.3.html?classId=2a78741a-2640-4787-bc3b-8ba740deb13f&assignmentId=9ae28efc-18e5-4870-aee6-472e475de330&submissionId=12ac9e1c-c52a-3ce9-24e6-4c17c65a5abf">Bài 4</a>
+          </div>
+        </button>
+      </div>
+      <div class="column">
+      <button style="background-color: #8B5D5D; margin-left: 130px;">
+        <a href="https://thietkewebn03.000webhostapp.com/bt2.3.html" style="padding: 0 40px; font-size:30px;">Buổi 2</a>
+         <div class="first">
+            <a href="">Bài 1</a>
+            <a href="#">Bài 2</a>
+            <a href="#">Bài 3</a>
+            <a href="#">Bài 1</a>
+          </div>
+      </button>
+      </div>
+  </div>
+  <div class="me" style="padding: 60px 0">
+    <div class="con">
+      <button style="background-color: #8B5D5D;margin-left: 170px;">
+        <a href="https://thietkewebn03.000webhostapp.com/B%C3%A0i%20t%E1%BA%ADp%20bu%E1%BB%95i%203.html" style="padding: 0 40px; font-size:30px;">Buổi 3</a>
+         <div class="first">
+            <a href="#">Bài 1</a>
+            <a href="#">Bài 2</a>
+            <a href="#">Bài 3</a>
+            <a href="#">Bài 1</a>
+          </div>
+      </button>
+    </div>
+    <div class="con">
+      <button style="background-color: #8B5D5D;margin-left: 130px;">
+        <a href="https://thietkewebn03.000webhostapp.com/b%C3%A0i%202.html" style="padding: 0 40px; font-size:30px;">Buổi 4</a>
+         <div class="first">
+            <a href="#">Bài 1</a>
+            <a href="#">Bài 2</a>
+            <a href="#">Bài 3</a>
+            <a href="#">Bài 1</a>
+          </div>
+      </button>
+    </div>
+    <div class="con">
+      <button style="background-color: #8B5D5D;margin-left: 100px;">
+        <a href="https://thietkewebn03.000webhostapp.com/bai3.html" style="padding: 0 40px; font-size:30px;">Buổi 5</a>
+         <div class="first">
+            <a href="#">Bài 1</a>
+            <a href="#">Bài 2</a>
+            <a href="#">Bài 3</a>
+            <a href="#">Bài 1</a>
+          </div>
+      </button>
+    </div>
+  </div>
+  <div class="row" >
+      <div class="column">
+        <button style="background-color: #8B5D5D;margin-left: 350px;">
+          <a href="#" style="padding: 0 40px; font-size:30px;">Buổi 6</a>
+           <div class="first">
+            <a href="#">Bài 1</a>
+            <a href="#">Bài 2</a>
+            <a href="#">Bài 3</a>
+            <a href="#">Bài 1</a>
+          </div>
+        </button>
+      </div>
+      <div class="column">
+      <button style="background-color: #8B5D5D; margin-left: 130px;">
+        <a href="#" style="padding: 0 40px; font-size:30px;">Buổi 7</a>
+         <div class="first">
+            <a href="#">Bài 1</a>
+            <a href="#">Bài 2</a>
+            <a href="#">Bài 3</a>
+            <a href="#">Bài 1</a>
+          </div>
+      </button>
+      </div>
+  </div>
+  <div class="me" style="padding: 60px 0">
+    <div class="con">
+      <button style="background-color: #8B5D5D;margin-left: 170px;">
+        <a href="#" style="padding: 0 40px; font-size:30px;">Buổi 8</a>
+         <div class="first">
+            <a href="#">Bài 1</a>
+            <a href="#">Bài 2</a>
+            <a href="#">Bài 3</a>
+            <a href="#">Bài 1</a>
+          </div>
+      </button>
+    </div>
+    <div class="con">
+      <button style="background-color: #8B5D5D;margin-left: 130px;">
+        <a href="#" style="padding: 0 40px; font-size:30px;">Buổi 9</a>
+         <div class="first">
+            <a href="#">Bài 1</a>
+            <a href="#">Bài 2</a>
+            <a href="#">Bài 3</a>
+            <a href="#">Bài 1</a>
+          </div>
+      </button>
+    </div>
+    <div class="con">
+      <button style="background-color: #8B5D5D;margin-left: 100px;">
+        <a href="#" style="padding: 0 40px; font-size:30px;">Buổi 10</a>
+         <div class="first">
+            <a href="#">Bài 1</a>
+            <a href="#">Bài 2</a>
+            <a href="#">Bài 3</a>
+            <a href="#">Bài 1</a>
+          </div>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+	
+</body>
+</html>

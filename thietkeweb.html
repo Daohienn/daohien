@@ -1,0 +1,372 @@
+<!-- Thiết kế -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thiết kế web</title>
+</head>
+<style>
+*{
+  padding: 0;
+  margin: 0;
+  border: 
+}
+body{
+  width: 100%;
+  font-family: var(--mdc-typography-body1-font-family,var(--mdc-typography-font-family,sans-serif));
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+li {
+  float: left;
+}
+
+li a, .nhi {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: #666666;
+  font-size: 25px;
+
+}
+
+li a:hover, .nhat:hover .nhi {
+  color: #9B703D;
+  border-bottom: 2px solid #C29D68;
+  border-color: #9B703D;
+}
+
+li.nhat {
+  display: inline-block;
+}
+
+.ba {
+  display: none;
+  position: absolute;
+  background-color: #ECECEC;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 99;
+}
+
+.ba a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.ba a:hover {
+  color: #C29D68;
+
+}
+
+.nhat:hover .ba {
+  display: block;
+}
+  .nhi {
+    color: #9B703D;
+  }
+  a{
+    text-decoration: none;
+  }
+  .content{
+    background-image: url('https://thietkewebn03.000webhostapp.com/d83.jpg');
+    width: 100%;
+    height: 100%;
+      opacity: 0.9;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .co {
+      float: left;
+      width: 25%;
+    }
+    .ro:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    .ro{
+      padding: 20px 0 90px 0;
+    }
+    button{
+      border: none;
+      box-shadow: 0 5px 8px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      border-radius: 20PX;
+      width: 140px;
+      height: 40px;
+    }
+    button a{
+      color: #EDEDED ;
+    }
+    button .tro a:hover{
+      color: #8B5D5D;
+      background-color: #E3B7A0;
+      border-radius: 20px;
+      box-shadow: 0 6px 9px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    .tro {
+      display: none;
+      position: absolute;
+      border-radius: 20px;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .tro a {
+      color: black;
+      text-decoration: none;
+      padding: 12px 14px;
+      display: block;
+      text-align: left;
+    }
+    .co:hover .tro{
+      display: block;
+    }
+    .tro a:hover{
+      color: #8B5D5D;
+    }
+    .tro {
+      display: none;
+      position: absolute;
+      border-radius: 20px;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .thu:hover .tro{
+      display: block;
+    }
+    .tro:hover{
+      color: #8B5D5D;
+    }
+    @media screen and (max-width: 768px) {
+    .mynav a {display: none;}
+    .mynav a.icon {
+      float: right;
+    display: block;
+    }
+
+  }
+  @media screen and (max-width: 768px) {
+    .mynav.responsive {position: relative;}
+    .mynav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .content.responsive.ro button{
+      width: 100px ;
+      height: 30px;
+    }
+    .mynav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .co{
+      display: block;
+      float: left;
+    }
+  }
+  .icon{
+    display: none;
+  }
+</style>
+<body>
+  <ul class="mynav" id="nav">
+   <li><a class="icon" href="#" onclick="myFunction()">≡</a></li>
+  <li class="gt"><a href="https://thietkewebn03.000webhostapp.com/gioithieu.html" style="">Giới thiệu</a></li>
+  <li class="nhat">
+    <a href="#" class="nhi">Assignment</a>
+    <div class="ba">
+        <a href="https://thietkewebn03.000webhostapp.com/thietkeweb.html">Thiết kế Web</a>
+      <a href="https://thietkewebn03.000webhostapp.com/dohoa.html">Sản phẩm đồ họa</a>
+      <a href="https://thietkewebn03.000webhostapp.com/khoinghiep.html">Khởi nghiệp & đổi mới sáng tạo</a>
+      <a href="https://thietkewebn03.000webhostapp.com/nckh.html">Nghiên cứu khoa học</a>
+    </div>
+  </li>
+  <li class="home"><a style="color: #9B703D;" href="https://thietkewebn03.000webhostapp.com/myweb.html">Home</a></li>
+  <li><a href="https://thietkewebn03.000webhostapp.com/lienhe.html">Liên hệ </a></li>
+  <li style="float: right; margin-right: 50px;"><img src="https://thietkewebn03.000webhostapp.com/Screenshot_39.png" width="60px" height="50PX"></li>
+</ul>
+<div id="giua" class="content" style="color:;padding: 0 0 100px 0; ">
+  <div style="padding: 7% 30%;">
+    <div style="padding: 20px 0; font-size: 50px; border-bottom: 3px solid black; color: #8B5D5D;"><p style="text-align: center;">THIẾT KẾ WEB</p></div>
+  </div>
+  <div class="ro">
+    <div class="co" style=" text-align: center;">
+      <button style="background-color: #8B5D5D;">
+          <div class="thu">
+              <a href="https://thietkewebn03.000webhostapp.com/bai3.html" style=" font-size:30px;">Buổi 1</a>
+              <div class="tro">
+                  <a href="https://thietkewebn03.000webhostapp.com/bai%201.html">Bài 1</a>
+                  <a href="https://thietkewebn03.000webhostapp.com/b%C3%A0i%202.html">Bài 2</a>
+                  <a href="https://thietkewebn03.000webhostapp.com/bai3.html">Bài 3</a>
+              </div>
+          </div>
+      </button>
+    </div>
+    <div class="co" style=" text-align: center;">
+      <button style="background-color: #8B5D5D;">
+          <div class="thu">
+              <a href="https://thietkewebn03.000webhostapp.com/bai3.html" style=" font-size:30px;">Buổi 2</a>
+              <div class="tro">
+                  <a href="https://thietkewebn03.000webhostapp.com/bai%201.html">Bài 1</a>
+                  <a href="https://thietkewebn03.000webhostapp.com/b%C3%A0i%202.html">Bài 2</a>
+                  <a href="https://thietkewebn03.000webhostapp.com/bai3.html">Bài 3</a>
+              </div>
+          </div>
+      </button>
+    </div>
+    <div class="co" style=" text-align: center;">
+      <button style="background-color: #8B5D5D;">
+          <div class="thu">
+              <a href="https://thietkewebn03.000webhostapp.com/bai3.html" style="font-size:30px;">Buổi 3</a>
+              <div class="tro">
+                  <a href="https://thietkewebn03.000webhostapp.com/bai%201.html">Bài 1</a>
+                  <a href="https://thietkewebn03.000webhostapp.com/b%C3%A0i%202.html">Bài 2</a>
+                  <a href="https://thietkewebn03.000webhostapp.com/bai3.html">Bài 3</a>
+              </div>
+          </div>
+      </button>
+    </div>
+    <div class="co" style=" text-align: center;">
+      <button style="background-color: #8B5D5D;">
+          <div class="thu">
+              <a href="https://thietkewebn03.000webhostapp.com/bai3.html" style=" font-size:30px;">Buổi 4</a>
+              <div class="tro">
+                  <a href="https://thietkewebn03.000webhostapp.com/bai%201.html">Bài 1</a>
+                  <a href="https://thietkewebn03.000webhostapp.com/b%C3%A0i%202.html">Bài 2</a>
+                  <a href="https://thietkewebn03.000webhostapp.com/bai3.html">Bài 3</a>
+              </div>
+          </div>
+      </button>
+    </div>
+  </div>
+  <div class="ro">
+    <div class="co" style=" text-align: center;">
+      <button style="background-color: #8B5D5D;">
+          <div class="thu">
+              <a href="https://thietkewebn03.000webhostapp.com/bai3.html" style=" font-size:30px;">Buổi 5</a>
+              <div class="tro">
+                  <a href="https://thietkewebn03.000webhostapp.com/buoi5b1.html">Bài 1</a>
+                  <a href="https://thietkewebn03.000webhostapp.com/Buoi5bai1.2.html">Bài 2</a>
+                  <a href="https://thietkewebn03.000webhostapp.com/buoi5bai2.html">Bài 3</a>
+              </div>
+          </div>
+      </button>
+    </div>
+    <div class="co" style=" text-align: center;">
+      <button style="background-color: #8B5D5D;">
+          <div class="thu">
+              <a href="https://thietkewebn03.000webhostapp.com/bai3.html" style="font-size:30px;">Buổi 6</a>
+              <div class="tro">
+                  <a href="https://thietkewebn03.000webhostapp.com/zingmp3.html">Bài 1</a>
+                  <a href="https://thietkewebn03.000webhostapp.com/chu.html">Bài 2</a>
+                  <a href="https://221001774.000webhostapp.com/bai%20tren%20lop/bai%20tap%203.html">Bài 3</a>
+              </div>
+          </div>
+      </button>
+    </div>
+    <div class="co" style=" text-align: center;">
+      <button style="background-color: #8B5D5D;">
+          <div class="thu">
+              <a href="https://thietkewebn03.000webhostapp.com/bai3.html" style="font-size:30px;">Buổi 7</a>
+              <div class="tro">
+                  <a href="https://thietkewebn03.000webhostapp.com/buoi7bai1.html">Bài 1.1</a>
+                  <a href="https://thietkewebn03.000webhostapp.com/Buoi7bai1.2.html">Bài 1.2</a>
+                  <a href="https://thietkewebn03.000webhostapp.com/buoi7bai2.html">Bài 2</a>
+                  <a href="https://thietkewebn03.000webhostapp.com/Buoi7Bai3.html">Bài 3</a>
+              </div>
+          </div>
+      </button>
+    </div>
+    <div class="co" style=" text-align: center;">
+      <button style="background-color: #8B5D5D;">
+          <div class="thu">
+              <a href="https://thietkewebn03.000webhostapp.com/bai3.html" style="font-size:30px;">Buổi 8</a>
+              <div class="tro">
+                  <a href="https://thietkewebn03.000webhostapp.com/Bu%E1%BB%95i%208/Buoi8bai1.html">Bài 1</a>
+                  <a href="https://thietkewebn03.000webhostapp.com/Bu%E1%BB%95i%208/Buoi8bai2.html">Bài 2</a>
+                  <a href="https://thietkewebn03.000webhostapp.com/Bu%E1%BB%95i%208/Buoi8bai3.1.html">Bài 3.1</a>
+                  <a href="https://thietkewebn03.000webhostapp.com/Bu%E1%BB%95i%208/Buoi8bai3.html">Bài 3.2</a>
+              </div>
+          </div>
+      </button>
+    </div>
+  </div>
+  <div class="ro">
+    <div class="co" style=" text-align: center;">
+      <button style="background-color: #8B5D5D;">
+          <div class="thu">
+              <a href="https://thietkewebn03.000webhostapp.com/bai3.html" style="font-size:30px;">Buổi 9</a>
+              <div class="tro">
+                  <a href="https://thietkewebn03.000webhostapp.com/Bu%E1%BB%95i%209/buoi9bai1.html">Bài 1</a>
+                  <a href="https://thietkewebn03.000webhostapp.com/Bu%E1%BB%95i%209/buoi9bai2.html#">Bài 2</a>
+              </div>
+          </div>
+      </button>
+    </div>
+    <div class="co" style=" text-align: center;">
+      <button style="background-color: #8B5D5D;">
+          <div class="thu">
+              <a href="https://thietkewebn03.000webhostapp.com/bai3.html" style="font-size:30px;">Buổi 10</a>
+              <div class="tro">
+                  <a href="https://thietkewebn03.000webhostapp.com/Bu%E1%BB%95i%2010/buoi10bai1.html">Bài 1</a>
+              </div>
+          </div>
+      </button>
+    </div>
+    <div class="co" style=" text-align: center;">
+      <button style="background-color: #8B5D5D;">
+          <div class="thu">
+              <a href="https://thietkewebn03.000webhostapp.com/bai3.html" style=" font-size:30px;">Buổi 11</a>
+              <div class="tro">
+                  <a href="https://thietkewebn03.000webhostapp.com/Bu%E1%BB%95i%2011/bai11.html">Bài 1</a>
+              </div>
+          </div>
+      </button>
+    </div>
+    <div class="co" style=" text-align: center;">
+      <button style="background-color: #8B5D5D;">
+          <div class="thu">
+              <a href="https://thietkewebn03.000webhostapp.com/bai30.html?classId=2a78741a-2640-4787-bc3b-8ba740deb13f&assignmentId=296d5a07-95ca-4ebd-972c-f85415743d06&submissionId=97506103-8fa6-782b-28fe-b56082a18b7e#Product" style=" font-size:30px;">Bài 30%</a>
+          </div>
+      </button>
+    </div>
+  </div>
+  <div style="text-align: center;">
+      <button style="background-color: #8B5D5D;">
+        <div class="thu">
+          <a href="https://thietkewebn03.000webhostapp.com/myweb.html" style="font-size:30px;">Bài 60%</a>
+        </div>
+      </button>
+    </div>
+</div>
+<script>
+      window.onscroll = function() {scrollFunction()};
+  function myFunction() {
+    var x = document.getElementById("nav");
+    if (x.className === "mynav") {
+      x.className += " responsive";
+    } else {
+      x.className = "mynav";
+    }
+  }
+
+</script>
+</body>
+</html>

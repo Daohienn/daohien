@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+
+<html><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Web</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="myweb.css">
+  <style>
+  *{
+    padding: 0;
+    margin: 0;
+  }
+  body{
+    width: 100%;
+    font-family: var(--mdc-typography-body1-font-family,var(--mdc-typography-font-family,sans-serif));
+    box-sizing: border-box;
+    background-color: #FFFBF6;
+  }
+  :root{
+    --color1: #F7F5F2;
+    --color2: #FAE5D0;
+    --color3: #C0AE9D;
+    --color4: #7B695C;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a, .nhi {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #666666;
+    font-size: 25px;
+
+  }
+
+  li a:hover, .nhat:hover:not(.home) .nhi {
+    color: #9B703D;
+    border-bottom: 2px solid #C29D68;
+    border-color: #9B703D;
+  }
+
+  li.nhat {
+    display: inline-block;
+  }
+
+  .ba {
+    display: none;
+    position: absolute;
+    background-color: #ECECEC;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .ba a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .ba a:hover {
+    color: #C29D68;
+    z-index: 99;
+  }
+
+  .nhat:hover .ba {
+    display: block;
+  }
+	.home {
+		color: #9B703D;
+	}
+	a{
+		text-decoration: none;}
+    .mynav .icon {
+    display: none;
+  }
+  .s1c1b1 button{
+    border: none;
+    text-align: center;
+    color: white;
+    background-color: #BFAE90;
+    cursor: pointer;
+    margin-top: 50px ;
+    width: 120px;
+    height: 40px;
+
+  }
+  .s1c1b1 button:hover{
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  .thumbnail{
+    width: au;
+    height: auto;
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid #e5e5e5; 
+  }
+  .nho {
+      float: left;
+      width: 20%;
+      /*padding: 15px;*/
+      margin-left: 3.11%;
+    }
+    .to:after {
+      content: "";
+      display: table;
+      clear: both;
+      width: 100%;
+    }
+    @media screen and (max-width: 1000px)  {
+      .nho {
+        width: 100%;
+      }
+    }
+    .con {
+      float: left;
+      width: 21.25%;
+    }
+    .me:after {
+      content: "";
+      display: table;
+      clear: both;
+      width: 100%;
+    }
+    @media screen and (max-width: 1000px)  {
+      .con {
+        width: 100%;
+      }
+    }
+    .bo, .con1, .con2{
+      width: 100%;
+      height: 500px;
+    }
+    .bo{
+      position: relative;
+      text-align: center;
+      
+    }
+    .bo .con1{
+      position: absolute;
+      opacity: 0.8;
+      left: 0;
+
+    }
+    .bo .con2{
+      position: absolute;
+      top: 50%;
+      color: white;
+      font-size: 30px;
+    
+    }
+    footer div{
+      color: #A8A8A8;
+    }
+   .dad{
+    content: "";
+    display: table;
+    clear: both;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #383838;
+   }
+   .son1{
+    float: left;
+    width: 13%;
+   }
+   .son2{
+    float: left;
+    width: 82%;
+   }
+   @media screen and (max-width: 500px){
+    .son{
+      width: 100%;
+    }
+   }
+   .mot, .hai {
+    display: inline-block;
+   }
+  @media screen and (max-width: 768px) {
+    .mynav a {display: none;}
+    .mynav a.icon {
+      float: right;
+    display: block;
+    }
+
+  }
+  @media screen and (max-width: 768px) {
+    .mynav.responsive {position: relative;}
+    .mynav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    
+    .mynav.responsive a {
+      max-width: 100%;
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .mynav.responsive.ba a {
+      padding: 10px;
+      float: none;
+      display: inline-block;
+      text-align: left;
+      z-index: 1;
+    }
+    
+  }
+	 .s1:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .s1c1{
+    width: 50%;
+    float: left;
+  }
+  .s1c2{
+    width: 30%;
+    float: left;
+  }
+  .s1c3{
+    width: 20%;
+    float: left;
+  }
+  @media screen and{
+    .s1c{
+      width: 100%;
+    }
+  }
+  .s1c1 p{
+    margin-bottom: 20px;
+  }
+  .s1c1b1, .s1c3b1{
+    background-color: var(--color4);
+  }
+  .s1c1,.s1c3,.s1c2,.s1{
+    background-color: var(--color2);
+  }
+  .con button a{
+    color: var(--color1);
+  }
+  .con button{
+    background-color: black;
+  }
+  .ong{
+    position: relative;
+    overflow: hidden;
+  }
+  .ong .ngoai{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    transition: 0.7s;
+  }
+  .ong:hover .ngoai1{
+    transform: scale(1.05);
+  }
+  .ong .ngoai2{
+    opacity: 0;
+    position: absolute;
+    left: 0;    
+    top: 0;
+    background-color: black;
+    transition: 0.7s;
+  }
+  .ong:hover .ngoai2{
+    opacity: 0.4;
+    transform: scale(1.05) ;
+  }
+  .ong .ngoai3 {
+    position: absolute;
+    top: 140px;
+    left: 30px;
+    color: white;
+    opacity: 0;
+  }
+  .ong:hover .con4{
+    opacity: 1;
+  }
+  :root{
+    --color1: #F7F5F2;
+    --color2: #FAE5D0;
+    --color3: #C0AE9D;
+    --color4: #7B695C;
+  }
+.dog{
+  position: fixed;
+}
+.ro:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.co{
+  width: 40%;
+  float: left;
+}
+.co p{
+  font-size: 15px;
+}
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
+  width: 100%;
+}
+.column{
+  width: 45%;
+  float: left;
+}
+@media screen and (max-width: 1000px){
+  .column{
+    width: 100%;
+  }
+}
+.son1 button{
+  width: 50px;
+  height: 50px;
+  background-color: #232222;
+}
+.con button{
+  border: none;
+    text-align: center;
+    color: white;
+    background-color: #BFAE90;
+    cursor: pointer;
+    margin-top: 50px ;
+    width: 120px;
+    height: 40px;
+}
+.con button:hover{
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.hai {
+    border: none;
+    text-align: center;
+    color: white;
+    background-color: #BFAE90;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+
+  }
+  .hai:hover{
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  .co i{
+    color: #FFBF01;
+    margin-right: 3px;
+  }
+</style></head>
+
+
+<body>
+<ul class="mynav" id="nav">
+   <li><a class="icon" href="#" onclick="myFunction()">≡</a></li>
+  <li class="gt"><a href="https://thietkewebn03.000webhostapp.com/gioithieu.html" style="">Giới thiệu</a></li>
+  <li class="nhat">
+    <a href="#" class="nhi">Assignment</a>
+    <div class="ba">
+        <a href="https://thietkewebn03.000webhostapp.com/thietkeweb.html">Thiết kế Web</a>
+      <a href="https://thietkewebn03.000webhostapp.com/dohoa.html">Sản phẩm đồ họa</a>
+      <a href="https://thietkewebn03.000webhostapp.com/khoinghiep.html">Khởi nghiệp & đổi mới sáng tạo</a>
+      <a href="https://thietkewebn03.000webhostapp.com/nckh.html">Nghiên cứu khoa học</a>
+    </div>
+  </li>
+  <li class="home"><a style="color: #9B703D;" href="https://thietkewebn03.000webhostapp.com/myweb.html">Home</a></li>
+  <li><a href="https://thietkewebn03.000webhostapp.com/lienhe.html">Liên hệ </a></li>
+  <li style="float: right; margin-right: 50px;"><img src="https://thietkewebn03.000webhostapp.com/Screenshot_39.png" width="60px" height="50PX"></li>
+</ul>
+
+<div class="bo">
+  <img class="con1" src="https://i.pinimg.com/originals/7d/07/a2/7d07a255678962d30d8717dcf5dbd266.gif" width="1400px" height="500px">
+  <div class="con2"><span style=" border: 2px solid white;border-radius: 20px;"><span style="padding: 30px 10px;"> THANKS FOR COMING</span></span> </div>
+</div>
+<div>
+  <div style=" width: 100px; border-bottom: 1.5px solid black; margin: 50px 5% 50PX 85%;"></div>
+  <div style="background-color: #C0AE9D;">
+    <h1 style="text-align: center; padding: 30px 30% ;">HELLO, MY NAME DAO HIEN. WELCOME TO MY WEBSITE</h1>
+    <h5 style=" text-align: center;padding: 0px 23% 30PX 23% ;">Trước tiên, cám ơn bạn đã ghé thăm trang web của tôi. Vậy hãy để tôi giới thiệu sơ qua một chút về trang web của tôi nhé. web của tôi mạng một phong cách cổ điển nhưng rất mong nội dung trang web của tôi không làm các bạn thất vọng.</h5>
+  </div>
+  <div style=" width: 100px; border-bottom: 1.5px solid black; margin: 50px 85% 50PX 5%;"></div>
+</div>
+  
+ <div class="s1" style="">
+   <div class="s1c1">
+     <div>
+        <div class="s1c1b1" style="padding: 100px 20% 40px 10% ">
+          <h1 style="margin-bottom: 30px ;">ABOUT ME</h1>
+          <p>Mình là Hiền, Một cô gái đến từ vùng quê đất nhãn. Mình xin giới thiệu qua về bản thân mình một chút nhé!! </p>
+          <p>Tên đầy đủ của mình là Đào Thị Hiền, hiện là sinh viên năm 2 của trường Đại học Thủ Đô Hà Nội</p>
+          <p>Mình đang cố gắng và tiếp tục theo đuổi chuyên ngành <b>FONTEND</b>  website hiện tại cũng là sản phẩm đầu tay do mình tự thiết kế </p>
+          <p><b>--Để biết thêm chi tiết về mình hãy nhấn nút ngay dưới đây nhé!!--</b></p>
+          <button><a style="color: var(--color1); font-size: 22px;" href="https://thietkewebn03.000webhostapp.com/gioithieu.html"> Chi tiết</a></button>
+        </div>
+     </div>
+     <div class="s1c1b2" style="height: 150px">
+      <div style="width: 100px; padding: 100px 5% 0 0;margin-left: 5%; border-bottom: 1.5px solid black;"></div>
+       
+     </div>
+   </div>
+   <div class="s1c2"><img src="nang1.jpg" width="100%" height="auto"></div>
+   <div class="s1c3">
+     <div style="height:160px;">
+       <div style="width: 40%; border-bottom: 1.5px solid black; padding: 50px 0 0 0; float: right; margin-right: 5%"></div>
+     </div>
+     <div class="s1c3b1">
+       <img style="padding: 50px 40% 230px 20%" src="nang2.jpg" width="50%" height="auto">
+     </div>
+   </div>
+ </div>
+  <div style="padding: 100PX 0 0 50PX;">
+    <div style="border-bottom: 1.5px solid black; margin-right:60%; font-size: 50PX; "><b>PERSONAL SKILLS</b></div>
+    <div style="padding: 50PX 0">
+      <i class="fa fa-bookmark" aria-hidden="true"></i>: FONTEND
+      <div>
+        <div style="padding: 20px 10%; ">
+          <div class="bon" style="height: 30px; border-radius: 20px; background-color: black;">
+            <div class="nam" style="width: 85%; height: 30px;border-radius: 20px; background-color: var(--color2);"><p style="text-align: center; padding: 7px 0" href="#">85%</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <i class="fa fa-bookmark" aria-hidden="true"></i>: ĐỒ HỌA
+      <div>
+        <div style="padding: 20px 10%; ">
+          <div class="bon" style="height: 30px; border-radius: 20px; background-color: black;">
+            <div class="nam" style="width: 70%; height: 30px;border-radius: 20px; background-color: var(--color2);"><p style="text-align: center; padding: 7px 0" href="#">70%</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="padding: 50PX 0">
+      <i class="fa fa-bookmark" aria-hidden="true"></i>: NGÔN NGỮ C
+      <div>
+        <div style="padding: 20px 10%; ">
+          <div class="bon" style="height: 30px; border-radius: 20px; background-color: black;">
+            <div class="nam" style="width: 80%; height: 30px;border-radius: 20px; background-color: var(--color2);"><p style="text-align: center; padding: 7px 0" href="#">80%</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="background-color: var(--color4); color: var(--color1);">
+    <div style="padding: 0 0 50px 0;">
+      <div style="padding: 50px 0;margin: 0 5%;  border-bottom: 1px solid black;"></div>
+      <div style="margin: 0 5%;">
+        <div>
+        <div style="  text-align: center; padding: 50px 0; ">
+          <b style="font-size: 30PX;">MỘT SỐ ẤN PHẨM NỔI BẬT</b><br>
+          <div style="padding: 10px 30%;">Những bức ảnh dưới đây chính là những ấn phẩm nổi bật nhất mà tôi đã làm. Để biết hơn chi tiết hãy nhấn nút phía dưới nơi để tất cả sản phẩm trong cả quá trình học hỏi và tìm tòi của mình nhé!!</div>
+        </div>
+      </div>
+      <div class="me">
+        <div class="con" style="padding: 0 5% 0 0;">
+          <div class="ong">
+            <div class="ngoai1">
+              <a href="https://thietkewebn03.000webhostapp.com/myweb.html" title="Nhấn để xem"><img src="tkw.png" width="100%" height="auto"></a>
+            </div>
+          </div>
+         
+          <div style="text-align: center; ">
+            <button style="margin-bottom: 20px;"><a href="https://thietkewebn03.000webhostapp.com/thietkeweb.html" title="Nhấn để biết thêm" style="padding: 20px 10px;">THIẾT KẾ WEB</a></button>
+          </div>
+        </div>
+        <div class="con" style="padding: 0 5% 0 0;">
+          <div class="ong">
+            <div class="ngoai1">
+              <a href="#" title="Nhấn để xem"><img src="dohoa.png" width="100%" height="auto"></a>
+            </div>
+          </div>
+         
+          <div style="text-align: center; ">
+            <button style="margin-bottom: 20px;"><a href="https://thietkewebn03.000webhostapp.com/dohoa.html" title="Nhấn để biết thêm" style="padding: 20px 10px;">ĐỒ HỌA</a></button>
+          </div>
+        </div>
+        <div class="con" style="padding: 0 5% 0 0;">
+          <div class="ong">
+            <div class="ngoai1">
+              <a href="https://www.canva.com/design/DAFTOCLW2XY/o6K6vcfmhuNz6dAc-Je1ug/view?utm_content=DAFTOCLW2XY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" title="Nhấn để xem"><img src="nckh.png" width="100%" height="auto"></a>
+            </div>
+          </div>
+         
+          <div style="text-align: center; ">
+            <button style="margin-bottom: 20px;"><a href="https://thietkewebn03.000webhostapp.com/nckh.html" title="Nhấn để biết thêm" style="padding: 20px 10px;text-align: center;">NGHIÊN CỨU KHOA HỌC</a></button>
+          </div>
+        </div>
+        <div class="con" style="">
+          <div class="ong">
+            <div class="ngoai1">
+              <a href="https://www.canva.com/design/DAFHnwjh4UI/HWQJpKGOWP-t_3uSHDSF4Q/view?utm_content=DAFHnwjh4UI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" title="Nhấn để xem"><img src="kndmst.png" width="100%" height="auto"></a>
+            </div>
+          </div>
+         
+          <div style="text-align: center; ">
+            <button style="margin-bottom: 20px;"><a href="https://thietkewebn03.000webhostapp.com/khoinghiep.html" title="Nhấn để biết thêm" style="padding: 20px 5px;text-align: center; font-size: 10px;">KHỞI NGHIỆP &amp; ĐỔI MỚI SÁNG TẠO</a></button>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div style="padding: 0px 0;margin: 0 5% ;  border-bottom: 1px solid black;"></div>
+
+  </div>
+    </div>
+    
+  <div style="background-color: var(--color2); color: black;">
+    <h1 style="text-align: center; padding: 20px 0; font-size: 40px; border-bottom: 2px solid black;">TESTIMONIALS</h1>
+    <div>
+      <div class="" style="padding: 30px 2.5% 20px 2.5%; margin-right: 5%; margin: 70px 28% 50px 28%; background-color: var(--color1);">
+        <div style="text-align: center; margin-top: -77px;">
+            <img style="border: 10px solid var(--color1); border-radius: 50%;" src="cm/cophun.png" width="80px" height="80px">
+            <div>
+              <div class="ro" style="padding: 20px 0">
+                <div class="co">
+                  <h4>Giảng viên bộ môn:<br> Trần Thị Thu Phương</h4>
+                </div>
+                <div class="co" style="float: right"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div>
+              </div>
+              <p>"Hiền là một sinh viên có tinh thần cầu tiến, năng động, khả năng thiết kế web tốt. Em cũng có tinh thần trách nhiệm cao trong công việc, cần phát huy."</p>
+            </div>
+          
+        </div>
+        
+      </div>
+    </div>
+      <div class="ro" style="padding: 50px 5%">
+      <div class="co" style="padding: 30px 2.5% 20px 2.5%; margin-right: 5%; background-color: var(--color1);">
+        <div style="text-align: center; margin-top: -77px;">
+            <img style="border: 10px solid var(--color1); border-radius: 50%;" src="cm/vu.jpg" width="80px" height="80px">
+            <div>
+              <div class="ro" style="padding: 20px 0">
+                <div class="co">
+                  <h4>Boy friend<br> Lê Ngọc Vũ</h4>
+                </div>
+                <div class="co" style="float: right"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div>
+              </div>
+              <p>"Hiền là một người chăm chỉ, siêng năng, rất tích cực trong học tập cũng như trong công việc. Ngoài ra cô ấy còn là một người nhiệt tình và gần gũi, năng nổ với cuộc sống, nghiêm túc với công việc."</p>
+            </div>
+          
+        </div>
+        
+      </div>
+        <div class="co" style="padding: 30px 2.5% 20px 2.5%; background-color: var(--color1);">
+        <div style="text-align: center; margin-top: -77px;">
+            <img style="border: 10px solid var(--color1); border-radius: 50%;" src="cm/phun.jpg" width="80px" height="80px">
+            <div>
+              <div class="ro" style="padding: 20px 0">
+                <div class="co">
+                  <h4>Best friend<br> Phạm Thị Hà Phương</h4>
+                </div>
+                <div class="co" style="float: right"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div>
+              </div>
+              <p>"Hiền là 1 người bạn thật sự là rất tốt, cùng tôi đi qua những năm tháng thanh xuân. Tính cách hoà đồng và cực kỳ tốt bụng. Thank you so much! Yêu bạn rất nhiều"</p>
+            </div>  
+        </div>
+      </div>
+
+    </div>
+    <div class="ro" style="padding: 50px 5%">
+      <div class="co" style="padding: 30px 2.5% 20px 2.5%; margin-right: 5%; background-color: var(--color1);">
+        <div style="text-align: center; margin-top: -77px;">
+            <img style="border: 10px solid var(--color1); border-radius: 50%;" src="cm/ngoc.jpg" width="80px" height="80px">
+            <div>
+              <div class="ro" style="padding: 20px 0">
+                <div class="co">
+                  <h4>My colleagues<br> Trần Thị Bích Ngọc</h4>
+                </div>
+                <div class="co" style="float: right"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div>
+              </div>
+              <p>"Hiền là người mà tôi k thể ngờ được là cuộc tôi sẽ gặp một người như thế, dù bạn hơi nghiêm khắc trong công việc nhưng rất cảm ơn vì đã gặp được bạn. "</p>
+            </div>
+          
+        </div>
+        
+      </div>
+        <div class="co" style="padding: 30px 2.5% 20px 2.5%; background-color: var(--color1);">
+        <div style="text-align: center; margin-top: -77px;">
+            <img style="border: 10px solid var(--color1); border-radius: 50%;" src="cm/tun.jpg" width="80px" height="80px">
+            <div>
+              <div class="ro" style="padding: 20px 0">
+                <div class="co">
+                  <h4>Best friend<br>Đàm Văn Tưởng</h4>
+                </div>
+                <div class="co" style="float: right"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div>
+              </div>
+              <p>"Là một người nghiêm túc trong làm việc, luôn cố gắng để hoàn thành công việc được giao, và luôn giúp đỡ bạn bè hết sức trong khả năng của mình."</p>
+            </div>
+          
+        </div>
+        
+      </div>
+
+    </div>
+  </div>
+<div class="row" style="background-color: #EAE8E8;">
+  <div class="column" style="background-color: #f5f5f5; padding: 30px 2.5%;">
+    <div style=" border-TOP: 1px solid #D1D1D1;">
+      <div class="dad" style="background-color: #f5f5f5; padding-top: 20px;">
+        <div class="son1">
+          <button><i style="color: white;" class="fa fa-envelope-open" aria-hidden="true"></i></button>
+        </div>
+        <div class="son2" style=" font-size: 22px;">MỌI THẮC MẮC XIN GỬI VỀ</div> 
+      </div>
+      </div>
+      <div style="margin-left: 5%;  ">
+          <form action="" target="_blank" onsubmit="return validateForm()">
+        <div style="height: 50PX; " class="mot">
+            <input style="padding: 20px 30px 20px 20px;margin-top: 40px;" style="" id="txt"  type="text" placeholder="Comment..." required name="Comment">
+        </div>
+        <button style="height: 57px;margin-top: 40px;" class="hai"  onclick="gui">Gửi</button>
+      </form>
+        </div>
+    </div>
+    <div class="column" style="background-color: #EAE8E8;padding: 0px 2.5% 30px 2.5%;">
+    <div style=" border-TOP: 1px solid #f5f5f5;margin-top: 30px">
+      <div class="dad" style="background-color: #EAE8E8; padding: 20px 2.5%; border-top: ;">
+        <div class="son1">
+          <button><i style="color: white;" class="fa fa-envelope-open" aria-hidden="true"></i></button>
+        </div>
+        <div class="son2" style="">
+          <div style=" font-size: 22px;">KẾT NỐI VỚI CHÚNG TÔI</div> 
+        </div>
+        
+      </div>
+      <div style="padding: 0 4% ;">Kết nối với tôi để có thể theo dõi và ùng hộ tôi qua các mạng xã hội: Facebook, Twitter, Pinterest,...</div>
+    </div>
+  </div>
+  </div>
+  
+</div>
+<footer>
+
+  <div class="to" style=" padding: 20px 0 ;background-color: #232222;">
+    <div>
+      <div class="nho" style="background-color: #232222;">
+      <div style="border-bottom: 1px solid white; width: 100%;">
+        <img src="logo.png" width="150px" height="150px">
+      </div>
+      <div style="font-size: 22px; padding: 10px 0 20px 0px">VỀ CHÚNG TÔI</div>
+      <div class="dad">
+        <div class="son1" style="background-color: #838383;"><i style="padding: 7px 9px;" class="fa fa-volume-control-phone" aria-hidden="true"></i>
+        </div>
+        <div class="son2"><p style="margin: 5.8px;">1900 1006</p></div>
+      </div>
+      <div class="dad">
+        <div class="son1" style="background-color: #838383;"><i style="padding: 7.5px 11px; color: white;" class="fa fa-mobile" aria-hidden="true"></i>
+        </div>
+        <div class="son2"><p style="margin: 5.8px;">(+84) 348349509</p></div>
+      </div>
+      <div class="dad">
+        <div class="son1" style="background-color: #838383;"><i style="padding: 7px 8px;" class="fa fa-envelope" aria-hidden="true"></i>
+        </div>
+        <div class="son2"><p style="margin: 5.8px;">(+84) 348349509</p></div>
+      </div>
+    </div>
+    <div class="nho" style="border-top: 1px solid white; ">
+      <div style="padding: 10px 0;">COMMENT FACEBOOK</div>
+    </div>
+    </div>
+    
+    <div class="nho" style="border-top: 1px solid white; ">
+      <div style="padding: 10px 0 30px 0;">THÔNG TIN</div>
+      <div style="padding: 15px 0; border-bottom: 0.7px solid gray;"><i style="margin-right: 15px;" class="fa fa-ravelry" aria-hidden="true"></i> Về chúng tôi</div>
+      <div style="padding: 15px 0; border-bottom: 0.7px solid gray;"><i style="margin-right: 15px;" class="fa fa-ravelry" aria-hidden="true"></i>Tuyển dụng</div>
+      <div style="padding: 15px 0; border-bottom: 0.7px solid gray;"><i style="margin-right: 15px;" class="fa fa-ravelry" aria-hidden="true"></i>Liên hệ</div>
+      <div style="padding: 15px 0; border-bottom: 0.7px solid gray;"><i style="margin-right: 15px;" class="fa fa-ravelry" aria-hidden="true"></i> Tin tức</div>
+      <div style="padding: 15px 0; border-bottom: 0.7px solid gray;"><i style="margin-right: 15px;" class="fa fa-ravelry" aria-hidden="true"></i> Tài liệu</div>
+    </div>
+      
+    <div class="nho" style="border-top: 1px solid white; ">
+      <div style="padding: 10px 0 30px 0;">CÂU HỎI THƯỜNG GẶP</div>
+      <div style="padding: 15px 0; border-bottom: 0.7px solid gray;"><i style="margin-right: 15px;" class="fa fa-ravelry" aria-hidden="true"></i>Sản phảm chất lượng</div>
+      <div style="padding: 15px 0; border-bottom: 0.7px solid gray;"><i style="margin-right: 15px;" class="fa fa-ravelry" aria-hidden="true"></i>Lợi nhuận khi hợp tác</div>
+      <div style="padding: 15px 0; border-bottom: 0.7px solid gray;"><i style="margin-right: 15px;" class="fa fa-ravelry" aria-hidden="true"></i>sản phẩm</div>
+      <div style="padding: 15px 0; border-bottom: 0.7px solid gray;"><i style="margin-right: 15px;" class="fa fa-ravelry" aria-hidden="true"></i>Giới thiệu bản thân</div>
+      <div style="padding: 15px 0; border-bottom: 0.7px solid gray;"><i style="margin-right: 15px;" class="fa fa-ravelry" aria-hidden="true"></i> sản phẩm</div>
+    </div>
+  </div>
+  <div style="padding: 0 50px;   background-color: black;">
+    <div style="padding: 30px 0;">WEBSITE BY DAOHIEN.COM</div>
+  </div>
+</footer>
+<script>
+      window.onscroll = function() {scrollFunction()};
+	function myFunction() {
+	  var x = document.getElementById("nav");
+	  if (x.className === "mynav") {
+	    x.className += " responsive";
+	  } else {
+	    x.className = "mynav";
+	  }
+	}
+
+
+</script>
+
+	
+
+
+</body></html>

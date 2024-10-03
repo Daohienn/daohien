@@ -1,0 +1,205 @@
+<!-- Thiết kế -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thiết kế web</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+*{
+  padding: 0;
+  margin: 0;
+}
+:root{
+    --color1: #F7F5F2;
+    --color2: #FAE5D0;
+    --color3: #C0AE9D;
+    --color4: #7B695C;
+  }
+body{
+  width: 100%;
+  font-family: var(--mdc-typography-body1-font-family,var(--mdc-typography-font-family,sans-serif));
+  box-sizing: border-box;
+  background-color: var(--color3);
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+li {
+  float: left;
+}
+
+li a, .nhi {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: #666666;
+  font-size: 25px;
+
+}
+
+li a:hover, .nhat:hover .nhi {
+  color: #9B703D;
+  border-bottom: 2px solid #C29D68;
+  border-color: #9B703D;
+}
+
+li.nhat {
+  display: inline-block;
+}
+
+.ba {
+  display: none;
+  position: absolute;
+  background-color: #ECECEC;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.ba a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.ba a:hover {
+  color: #C29D68;
+
+}
+
+.nhat:hover .ba {
+  display: block;
+}
+ 
+  a{
+    text-decoration: none;
+  }
+ 
+    @media screen and (max-width: 768px) {
+    .mynav a {display: none;}
+    .mynav a.icon {
+      float: right;
+    display: block;
+    }
+
+  }
+  @media screen and (max-width: 768px) {
+    .mynav.responsive {position: relative;}
+    .mynav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    
+    .mynav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .ba.responsive a{
+    	float: none;
+      display: block;
+      text-align: left;
+    }
+    .column1,.column2{
+      display: block;
+      float: left;
+    }
+  }
+  .icon{
+    display: none;
+  }
+  .bo{
+  	position: relative;
+  }
+  .con1{
+  	position: absolute;
+
+  }
+  .con2{
+  	position: absolute;
+  }
+  img{
+  	opacity: 0.9;
+  }
+  button{
+  	background-color: var(--color4);
+  	border: none;
+  	width: 30px ;
+  	height: 30px ;
+  	border-radius: 50%;
+  	margin-bottom: 20px;
+  }
+  button i{
+  	color: white;
+  }
+</style>
+<body>
+  <ul class="mynav" id="nav">
+   <li><a class="icon" href="#" onclick="myFunction()">≡</a></li>
+  <li class="gt"><a href="https://thietkewebn03.000webhostapp.com/gioithieu.html" style="">Giới thiệu</a></li>
+  <li class="nhat">
+    <a href="#" class="nhi">Assignment</a>
+    <div class="ba">
+        <a href="https://thietkewebn03.000webhostapp.com/thietkeweb.html">Thiết kế Web</a>
+      <a href="https://thietkewebn03.000webhostapp.com/dohoa.html">Sản phẩm đồ họa</a>
+      <a href="https://thietkewebn03.000webhostapp.com/khoinghiep.html">Khởi nghiệp & đổi mới sáng tạo</a>
+      <a href="https://thietkewebn03.000webhostapp.com/nckh.html">Nghiên cứu khoa học</a>
+    </div>
+  </li>
+  <li class="home"><a href="https://thietkewebn03.000webhostapp.com/myweb.html">Home</a></li>
+  <li><a style="color: #9B703D;" href="https://thietkewebn03.000webhostapp.com/lienhe.html">Liên hệ </a></li>
+  <li style="float: right; margin-right: 50px;"><img src="https://thietkewebn03.000webhostapp.com/Screenshot_39.png" width="60px" height="50PX"></li>
+</ul>
+<div >
+	<div class="bo" style="width: 100%; color: var(--color1); ">
+		<img class="con1" src="https://i.pinimg.com/564x/23/1d/13/231d130be3bb04517e81b53c0c18f170.jpg" width="100%" height="auto">
+		<div class="con2" style="width: 100%;">
+			<div style="text-align: center; padding:13% 0; font-size: 100px;font-family:Century Gothic;">
+				Contact Us
+		</div>
+		<div style="padding: 20px 2%; background-color: var(--color1); margin: 0 22%  80px 22%; box-shadow: 0px 10px 50px 0px rgba(0,0,0,0.8);">
+			<div style="padding: 30px 10%; color: var(--color4); font-size:21px;">
+				<button>
+					<i style="font-size: 22px;" class="fa fa-map-marker" aria-hidden="true"></i></button>: Ngõ 165, Cầu Giấy, Hà Nội<br>
+					<button>
+					<i style="font-size: 22px;" class="fa fa-phone" aria-hidden="true"></i></button>: (+84)348349509<br>
+					<button>
+					<i style="font-size: 18px;" class="fa fa-envelope" aria-hidden="true"></i></button>: daohien0205@gmail.com<br>
+					<button>
+					<i style="font-size: 22px;" class="fa fa-facebook" aria-hidden="true"></i></button>: <a href="https://www.facebook.com/profile.php?id=100028333234054" style="color: var(--color4);">Đào Hiềnn</a><br>
+					<button>
+					<i style="font-size: 22px;" class="fa fa-instagram" aria-hidden="true"></i></button>: <a href="https://www.instagram.com/hien_0205/" style="color: var(--color4);">daohien_0205</a><br>
+					<button>
+					<i style="font-size: 22px;" class="fa fa-twitter" aria-hidden="true"></i></button>: <a href="https://twitter.com/Hino54071239" style="color: var(--color4);">@Hino54071239</a><br>
+
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+      window.onscroll = function() {scrollFunction()};
+  function myFunction() {
+    var x = document.getElementById("nav");
+    if (x.className === "mynav") {
+      x.className += " responsive";
+    } else {
+      x.className = "mynav";
+    }
+  }
+
+</script>
+</body>
+</html>
